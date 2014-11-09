@@ -5,6 +5,8 @@ title: Website moved to Jekyll
 
 We have decided to move the website's source to [Jekyll](https://jekyllrb.com/).
 
+<!--more-->
+
 Jekyll is used widely by many people who want a customizable static page generator.
 It generally works much better than the previous solution.
 
