@@ -218,6 +218,35 @@ module.exports = function(grunt) {
             }
         },
 
+        critical: {
+            dist: {
+                options: {
+                    base: '<%= dirs.dest %>/',
+                    css: '<%= concat.css.dest %>',
+                    ignore: [
+                        '@font-face',
+                        /print/,
+                        /url\(/,
+                        /\.fa/
+                    ],
+                    ignoreOptions: {
+                        matchSelectors: true,
+                        matchTypes: true,
+                        matchDeclarationProperties: false,
+                        matchDeclarationValues: true,
+                        matchMedia: true
+                    },
+                    inline: {
+                        minify: false
+                    }
+                },
+                expand: true,
+                cwd: '<%= dirs.dest %>',
+                dest: '<%= dirs.dest %>',
+                src: ['**/*.html']
+            }
+        },
+
         connect: {
             options: {
                 hostname: 'localhost',
@@ -313,6 +342,7 @@ module.exports = function(grunt) {
         'postcss',
         'cssmin',
         'uglify',
+        'critical',
         'filerev',
         'usemin',
         'sri_hash',
