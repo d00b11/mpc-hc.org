@@ -17,7 +17,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "autoprefixer": "^9.1.5",
+    "autoprefixer": "^9.3.1",
     "css-mqpacker": "^7.0.0",
     "grunt": "^1.0.3",
     "grunt-accessibility": "^6.0.0",
@@ -33,15 +33,15 @@
     "grunt-doctype": "^2.0.1",
     "grunt-eslint": "^21.0.0",
     "grunt-filerev": "^2.3.1",
-    "grunt-html": "^9.3.0",
-    "grunt-jekyll": "^0.4.7",
+    "grunt-html": "^10.0.0",
+    "grunt-jekyll": "^1.0.0",
     "grunt-postcss": "^0.9.0",
     "grunt-purgecss": "^1.0.0",
-    "grunt-sri-hash": "^1.1.1",
+    "grunt-sri-hash": "^1.1.2",
     "grunt-usemin": "^3.1.1",
     "load-grunt-tasks": "^4.0.0",
-    "postcss-combine-duplicated-selectors": "^6.0.4",
-    "time-grunt": "^1.4.0"
+    "postcss-combine-duplicated-selectors": "^6.1.0",
+    "time-grunt": "^2.0.0"
   },
   "engines": {
     "node": ">=10"
